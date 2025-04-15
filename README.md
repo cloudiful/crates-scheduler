@@ -4,6 +4,13 @@ Run async function at a planned schedule
 
 ## Usage
 
+### Add this package in Cargo.toml under [dependencies]
+
+```toml
+[dependencies]
+scheduler = { git = "https://github.com/cloudiful/crates-scheduler.git" }
+```
+
 For example I want to run this **add** function
 
 ```rust
