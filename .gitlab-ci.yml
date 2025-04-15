@@ -1,0 +1,12 @@
+test:
+  stage: test
+  variables:
+    CARGO_HOME: $CI_PROJECT_DIR/.cargo/
+  image: rust:latest
+  tags:
+    - docker
+  script:
+    - cargo test
+  cache:
+    paths:
+      - $CARGO_HOME
